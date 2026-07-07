@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Mohammad Sajid - Personal Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio of Shaik Mohammad Sajid, MCA student and Software Developer specializing in Web Technologies, Database Management, and UI/UX Design.">
+  <meta name="keywords" content="Shaik Mohammad Sajid, Portfolio, Developer, MCA, Software Engineer, Web Development, UI/UX Design, Database Management">
+  <link rel="canonical" href="https://sksajid.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sksajid.github.io/">
+  <meta property="og:title" content="Shaik Mohammad Sajid - Personal Portfolio">
+  <meta property="og:description" content="Personal portfolio of Shaik Mohammad Sajid, MCA student and Software Developer specializing in Web Technologies, Database Management, and UI/UX Design.">
+  <meta property="og:image" content="./assets/images/my-avatar.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://sksajid.github.io/">
+  <meta property="twitter:title" content="Shaik Mohammad Sajid - Personal Portfolio">
+  <meta property="twitter:description" content="Personal portfolio of Shaik Mohammad Sajid, MCA student and Software Developer specializing in Web Technologies, Database Management, and UI/UX Design.">
+  <meta property="twitter:image" content="./assets/images/my-avatar.png">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/jpeg">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css?v=7">
+  <!-- Motion Enhancement Layer (additive — zero existing style changes) -->
+  <link rel="stylesheet" href="./assets/css/motion.css?v=7">
+  <!-- Glassmorphism Premium Enhancement Layer (additive — zero color or layout changes) -->
+  <link rel="stylesheet" href="./assets/css/glass.css?v=7">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ================================================================
+    PREMIUM CINEMATIC GLASS INTRO LOADER
+    Frosted preloader overlay with ambient lights and particles.
+  ================================================================ -->
+  <div id="intro-loader">
+    <!-- Ambient glow orbs inside the loader -->
+    <div class="loader-glow loader-glow--1" aria-hidden="true"></div>
+    <div class="loader-glow loader-glow--2" aria-hidden="true"></div>
+    <!-- Slow-moving reflection layer -->
+    <div class="loader-sheen" aria-hidden="true"></div>
+    <!-- Dynamic canvas for preloader particles -->
+    <canvas id="loader-particles" aria-hidden="true"></canvas>
+
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="logo-char">S</span>
+        <span class="logo-char">M</span>
+        <span class="logo-char">S</span>
+      </div>
+      <div class="loader-progress-bar-wrap">
+        <div class="loader-progress-bar"></div>
+      </div>
+      <span class="loader-status">Initializing System…</span>
+    </div>
+  </div>
+
+  <!-- ================================================================
+    GLASSMORPHISM FLOATING ORBS
+    Background depth enhancement layer — purely decorative,
+    styled by glass.css, animated with CSS transforms only.
+  ================================================================ -->
+  <div id="glass-orbs" aria-hidden="true">
+    <div class="glass-orb glass-orb--1"></div>
+    <div class="glass-orb glass-orb--2"></div>
+    <div class="glass-orb glass-orb--3"></div>
+  </div>
+
+  <!--
+    - Scroll Progress Bar
+  -->
+  <div id="scroll-progress"></div>
+
+  <!--
+    - Custom Interactive Cursor
+  -->
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-dot"></div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Shaik Mohammad Sajid" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Shaik Mohammad Sajid">Shaik Mohammad Sajid</h1>
+
+          <p class="title">Software Developer & MCA Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sksajid2502@gmail.com" class="contact-link">sksajid2502@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919030325396" class="contact-link">+91 9030325396</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location Status</p>
+
+              <span>Willing to relocate: Yes</span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Yanam, Puducherry, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/Sk%20Sajid" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR (Scroll-Spy enabled navigation)
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#hero" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#resume" class="navbar-link" data-nav-link>Resume</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!-- 
+        ========================================================================
+        1. HERO HEADER SECTION
+        ========================================================================
+      -->
+      <section class="hero-section reveal active-reveal" id="hero">
+        <div class="hero-content">
+          <p class="hero-subtitle">Hello, I am</p>
+          <h2 class="hero-name">Shaik Mohammad Sajid</h2>
+          <div class="hero-badge-slider">
+            <span class="badge-slide active m-typewriter-target">Full-Stack Developer</span><span class="m-typewriter-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            A motivated developer specializing in crafting modern, high-performance web systems, relational databases,
+            and premium user-centered interfaces.
+          </p>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary scroll-link">Explore My Work</a>
+            <a href="#contact" class="btn btn-secondary scroll-link">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-graphics">
+          <div class="floating-shape shape-1"></div>
+          <div class="floating-shape shape-2"></div>
+          <div class="floating-shape shape-3"></div>
+          <div class="tech-badge-grid">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">NodeJS</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">SQL Server</span>
+            <span class="tech-badge">AWS S3</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator-dots"></div>
+
+      <!-- 
+        ========================================================================
+        2. ABOUT ME SECTION
+        ========================================================================
+      -->
+      <article class="about-container reveal" id="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p id="about-p1">
+            I am a motivated MCA graduate aiming to start a career in the IT sector by contributing my technical skills
+            and learning new technologies to grow professionally along with the organization.
+          </p>
+
+          <p id="about-p2">
+            With a background in Computer Science (B.Sc.) and current advanced studies in Computer Applications (MCA), I
+            have built custom systems spanning multiple tiers: from database-backed applications using SQL Server and
+            MySQL, to responsive frontends designed using modern UI/UX design standards. I look forward to working
+            within collaborative development environments.
+          </p>
+        </section>
+
+        <!-- Metrics cards (Don't want simple text) -->
+        <div class="metrics-grid">
+          <div class="metric-card interactive-card">
+            <h3>MCA</h3>
+            <p>Postgraduate Candidate</p>
+            <span>80% Score</span>
+          </div>
+          <div class="metric-card interactive-card">
+            <h3>B.Sc.</h3>
+            <p>Computer Science Degree</p>
+            <span>60% Graduate</span>
+          </div>
+          <div class="metric-card interactive-card">
+            <h3>6+</h3>
+            <p>Major Certifications</p>
+            <span>Industry Accredited</span>
+          </div>
+        </div>
+
+        <div class="separator-dots"></div>
+
+        <!-- 
+          ========================================================================
+          3. CORE SERVICES SECTION
+          ========================================================================
+        -->
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Doing</h3>
+          <ul class="service-list">
+            <li class="service-item interactive-card" data-tilt>
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  Creating clean, responsive interfaces and full-stack web applications using HTML, CSS, JavaScript, and
+                  MERN stack.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item interactive-card" data-tilt>
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="UI/UX Graphical Design Icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Graphical Design</h4>
+                <p class="service-item-text">
+                  Designing engaging poster boards, interactive wireframes, and user-centric interfaces focused on clean
+                  layouts.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item interactive-card" data-tilt>
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Database Management Icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Management</h4>
+                <p class="service-item-text">
+                  Designing relational schemas and managing databases effectively with SQL Server, MySQL, and MongoDB.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item interactive-card" data-tilt>
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="DevOps and Cloud Basics Icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevOps & Cloud Basics</h4>
+                <p class="service-item-text">
+                  Implementing version control with Git and GitHub, along with working knowledge of cloud basics on AWS
+                  (S3).
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="separator-dots"></div>
+
+        <!-- 
+          ========================================================================
+          4. INTERPERSONAL STRENGTHS SECTION
+          ========================================================================
+        -->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Traits & Availability</h3>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item interactive-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                <img src="./assets/images/trait-communication.png" alt="Communication Trait" width="60" data-testimonials-avatar>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Communication</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Communicate clearly through effective verbal, non-verbal, written, and listening skills. Focuses on
+                  active listening and feedback.
+                </p>
+              </div>
+            </li>
+
+            <li class="testimonials-item interactive-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                <img src="./assets/images/trait-collaboration.png" alt="Collaboration Trait" width="60" data-testimonials-avatar>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Collaboration</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Build strong relationships using empathy, emotional intelligence, teamwork, and adaptability across
+                  different environments.
+                </p>
+              </div>
+            </li>
+
+            <li class="testimonials-item interactive-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                <img src="./assets/images/trait-adaptability.png" alt="Adaptability Trait" width="60" data-testimonials-avatar>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Adaptability</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Flexible to work in remote, hybrid, or office-based environments based on business needs, including
+                  rotational shifts.
+                </p>
+              </div>
+            </li>
+
+            <li class="testimonials-item interactive-card" data-testimonials-item>
+              <figure class="testimonials-avatar-box">
+                <img src="./assets/images/trait-availability.png" alt="Availability Trait" width="60" data-testimonials-avatar>
+              </figure>
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Availability</h4>
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Available to join immediately and committed to successfully completing the full apprenticeship or
+                  training program.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- modal placeholder -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/trait-communication.png" alt="Communication Trait" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Communication</h4>
+              <time datetime="2026-06-30">June 30, 2026</time>
+              <div data-modal-text>
+                <p>
+                  Communicate clearly through effective verbal, non-verbal, written, and listening skills. Focuses on
+                  active listening and feedback.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </article>
+
+      <div class="separator-dots"></div>
+
+      <!-- 
+        ========================================================================
+        5. TECHNICAL SKILLS SECTION (Interactive Progress Rings)
+        ========================================================================
+      -->
+      <section class="skills-section reveal" id="skills">
+        <header>
+          <h2 class="h2 article-title">My Skills</h2>
+        </header>
+
+        <div class="skills-container content-card">
+          <!-- Circular Progress Grid -->
+          <div class="circular-skills-grid">
+
+            <div class="skill-circle-card interactive-card">
+              <div class="svg-container">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-bg" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="50" cx="60"
+                    cy="60" />
+                  <circle class="progress-ring-fill" stroke="url(#blue-gradient)" stroke-width="8" fill="transparent"
+                    r="50" cx="60" cy="60" data-pct="90" />
+                </svg>
+                <div class="percentage-label">90%</div>
+              </div>
+              <h4 class="h5">UI/UX Design</h4>
+            </div>
+
+            <div class="skill-circle-card interactive-card">
+              <div class="svg-container">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-bg" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="50" cx="60"
+                    cy="60" />
+                  <circle class="progress-ring-fill" stroke="url(#blue-gradient)" stroke-width="8" fill="transparent"
+                    r="50" cx="60" cy="60" data-pct="85" />
+                </svg>
+                <div class="percentage-label">85%</div>
+              </div>
+              <h4 class="h5">Web Technologies</h4>
+            </div>
+
+            <div class="skill-circle-card interactive-card">
+              <div class="svg-container">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-bg" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="50" cx="60"
+                    cy="60" />
+                  <circle class="progress-ring-fill" stroke="url(#blue-gradient)" stroke-width="8" fill="transparent"
+                    r="50" cx="60" cy="60" data-pct="80" />
+                </svg>
+                <div class="percentage-label">80%</div>
+              </div>
+              <h4 class="h5">Programming</h4>
+            </div>
+
+            <div class="skill-circle-card interactive-card">
+              <div class="svg-container">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-bg" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="50" cx="60"
+                    cy="60" />
+                  <circle class="progress-ring-fill" stroke="url(#blue-gradient)" stroke-width="8" fill="transparent"
+                    r="50" cx="60" cy="60" data-pct="75" />
+                </svg>
+                <div class="percentage-label">75%</div>
+              </div>
+              <h4 class="h5">Database Mgt</h4>
+            </div>
+
+            <div class="skill-circle-card interactive-card">
+              <div class="svg-container">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-bg" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="50" cx="60"
+                    cy="60" />
+                  <circle class="progress-ring-fill" stroke="url(#blue-gradient)" stroke-width="8" fill="transparent"
+                    r="50" cx="60" cy="60" data-pct="70" />
+                </svg>
+                <div class="percentage-label">70%</div>
+              </div>
+              <h4 class="h5">DevOps & Cloud</h4>
+            </div>
+
+          </div>
+
+          <!-- SVG Gradient Definition -->
+          <svg width="0" height="0" style="position: absolute;">
+            <defs>
+              <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6cbae7" />
+                <stop offset="100%" stop-color="#2a5ba9" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </section>
+
+      <div class="separator-dots"></div>
+
+      <!-- 
+        ========================================================================
+        6. ACADEMIC PORTFOLIO SECTION
+        ========================================================================
+      -->
+      <section class="portfolio-section reveal" id="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>UI/UX Design</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>UI/UX Design</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active interactive-card" data-filter-item data-category="ui/ux design" data-tilt>
+              <a href="#portfolio">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-nutrition.png" alt="Nutrition app" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nutrition App</h3>
+
+                <p class="project-category">UI/UX Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active interactive-card" data-filter-item data-category="applications" data-tilt>
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-textile.png" alt="Textile Management" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Textile Management</h3>
+
+                <p class="project-category">Applications (VB.NET & SQL Server)</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active interactive-card" data-filter-item data-category="web development" data-tilt>
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-gas-agency.png" alt="Gas Agency" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gas Agency System</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </section>
+
+      <div class="separator-dots"></div>
+
+      <!-- 
+        ========================================================================
+        7. EDUCATION & CERTIFICATIONS (Resume section in navbar)
+        ========================================================================
+      -->
+      <article class="resume-container reveal" id="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- 
+          ========================================================================
+          8. EDUCATION TIMELINE SECTION
+          ========================================================================
+        -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">MCA (Pursuing) - Aditya Degree & PG College, Kakinada</h4>
+              <span>2024 — 2026</span>
+              <p class="timeline-text">
+                Currently pursuing Master of Computer Applications with an academic score of 80%. Focused on advanced
+                computational structures, software engineering paradigms, and modern architectures.
+              </p>
+            </li>
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">B.Sc. Computer Science - Dr. Sarvepalli Govt College, Yanam</h4>
+              <span>2020 — 2023</span>
+              <p class="timeline-text">
+                Completed undergraduate degree in Computer Science with a score of 60%. Acquired strong core knowledge
+                in algorithms, database normalization, and structured programming.
+              </p>
+            </li>
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">Intermediate - Sri Sai Junior College, Yanam</h4>
+              <span>2018 — 2020</span>
+              <p class="timeline-text">
+                Completed higher secondary education focusing on mathematics and science streams with an academic score
+                of 65%.
+              </p>
+            </li>
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">SSC - Sarada Vidya Niketan Govt High School, Yanam</h4>
+              <span>2018</span>
+              <p class="timeline-text">
+                Secondary school education completed with a score of 85%.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <div class="separator-dots"></div>
+
+        <!-- 
+          ========================================================================
+          9. CERTIFICATIONS TIMELINE SECTION
+          ========================================================================
+        -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="medal-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">MERN Full-stack Development</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Certified by ADHOC Solutions. Hands-on development training covering MongoDB, Express.js, React,
+                Node.js, API integrations, and token-based authentication.
+              </p>
+            </li>
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">UI/UX Design</h4>
+              <span>Jan 2024 — Apr 2024</span>
+              <p class="timeline-text">
+                Completed from Design Boost Institution. Focuses on wireframing, UX mapping, hierarchy, typography, and
+                interactive screen designs.
+              </p>
+            </li>
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">C Advanced, C Essentials & Python Essentials</h4>
+              <span>Cisco Networking Academy</span>
+              <p class="timeline-text">
+                Comprehensive training in procedural programming (C structures, memory management, pointers) and
+                scripting fundamentals with Python.
+              </p>
+            </li>
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">Data Science Course</h4>
+              <span>2023 — Tech-nook</span>
+              <p class="timeline-text">
+                Foundational understanding of data analysis workflows, pandas, numpy libraries, and simple visualization
+                pipelines.
+              </p>
+            </li>
+
+            <li class="timeline-item interactive-card">
+              <h4 class="h4 timeline-item-title">Microsoft Office Specialist</h4>
+              <span>Excel & PowerPoint</span>
+              <p class="timeline-text">
+                Professional certification demonstrating efficiency in database sheets, formulas, pivot tables, and
+                slide design.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <div class="separator-dots"></div>
+
+      <!-- 
+        ========================================================================
+        10. HOBBIES SECTION
+        ========================================================================
+      -->
+      <section class="hobbies-section reveal" id="hobbies">
+        <header>
+          <h2 class="h2 article-title">My Hobbies</h2>
+        </header>
+
+        <div class="hobbies-grid content-card">
+          <div class="hobby-card interactive-card">
+            <div class="hobby-icon"><ion-icon name="brush-outline"></ion-icon></div>
+            <h4>Poster & UI Design</h4>
+            <p>Creating visual artwork and designing beautiful interfaces.</p>
+          </div>
+          <div class="hobby-card interactive-card">
+            <div class="hobby-icon"><ion-icon name="book-outline"></ion-icon></div>
+            <h4>Reading Books</h4>
+            <p>Exploring tech papers, design studies, and literature.</p>
+          </div>
+          <div class="hobby-card interactive-card">
+            <div class="hobby-icon"><ion-icon name="musical-notes-outline"></ion-icon></div>
+            <h4>Listening to Music</h4>
+            <p>Winding down with creative tracks and acoustic playlists.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator-dots"></div>
+
+      <!-- 
+        ========================================================================
+        11. TECH BLOG SECTION
+        ========================================================================
+      -->
+      <article class="blog-container reveal" id="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <div class="blog-carousel-wrapper">
+            <ul class="blog-posts-list">
+
+              <li class="blog-post-item interactive-card" data-tilt>
+                <a href="#">
+
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-mern.png" alt="Getting Started with the MERN Stack" loading="lazy">
+                  </figure>
+
+                  <div class="blog-content">
+
+                    <div class="blog-meta">
+                      <p class="blog-category">Web Development</p>
+                      <span class="dot"></span>
+                      <time datetime="2026-06-30">June 30, 2026</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Getting Started with MERN</h3>
+
+                    <p class="blog-text">
+                      An introduction to building highly dynamic applications with MongoDB, Express, React, and Node.js.
+                    </p>
+
+                  </div>
+
+                </a>
+              </li>
+
+              <li class="blog-post-item interactive-card" data-tilt>
+                <a href="#">
+
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-uiux.png" alt="Designing User Interfaces: Core Principles"
+                      loading="lazy">
+                  </figure>
+
+                  <div class="blog-content">
+
+                    <div class="blog-meta">
+                      <p class="blog-category">UI/UX Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2026-06-25">June 25, 2026</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Designing for Humans</h3>
+
+                    <p class="blog-text">
+                      Core principles of UX layout, color harmony, typography, and wireframe prototyping for digital
+                      projects.
+                    </p>
+
+                  </div>
+
+                </a>
+              </li>
+
+              <li class="blog-post-item interactive-card" data-tilt>
+                <a href="#">
+
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-aws-s3.png" alt="Introduction to Cloud Storage with AWS S3"
+                      loading="lazy">
+                  </figure>
+
+                  <div class="blog-content">
+
+                    <div class="blog-meta">
+                      <p class="blog-category">Cloud Computing</p>
+                      <span class="dot"></span>
+                      <time datetime="2026-06-20">June 20, 2026</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Cloud Storage with AWS S3</h3>
+
+                    <p class="blog-text">
+                      A beginner-friendly guide to cloud buckets, permissions, and hosting files securely on AWS.
+                    </p>
+
+                  </div>
+
+                </a>
+              </li>
+
+              <li class="blog-post-item interactive-card" data-tilt>
+                <a href="#">
+
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-git.png" alt="Why Version Control Matters: Git and GitHub"
+                      loading="lazy">
+                  </figure>
+
+                  <div class="blog-content">
+
+                    <div class="blog-meta">
+                      <p class="blog-category">DevOps</p>
+                      <span class="dot"></span>
+                      <time datetime="2026-06-15">June 15, 2026</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Why Version Control Matters</h3>
+
+                    <p class="blog-text">
+                      How utilizing Git and GitHub saves code history, enables collaboration, and prevents merge
+                      conflicts.
+                    </p>
+
+                  </div>
+
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="blog-navigation">
+            <button class="blog-nav-btn prev" id="blog-prev" aria-label="Previous Post">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="blog-nav-btn next" id="blog-next" aria-label="Next Post">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+        </section>
+
+      </article>
+
+      <div class="separator-dots"></div>
+
+      <!-- 
+        ========================================================================
+        12. CONTACT SECTION
+        ========================================================================
+      -->
+      <article class="contact-container reveal" id="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122049.20815197825!2d82.16487679726564!3d16.9806497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38283fb002677d%3A0x6fb0d9d690a5015b!2sKakinada%2C%20Andhra%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1719747689441!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn id="send-msg-btn">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span class="btn-text-wrap" aria-hidden="true">
+                <span class="btn-text-layer btn-text-default">Send Message</span>
+                <span class="btn-text-layer btn-text-sending">Sending…</span>
+                <span class="btn-text-layer btn-text-sent">✓ Sent!</span>
+              </span>
+              <span class="btn-text-accessible">Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+        <section class="contact-thankyou reveal">
+          <div class="content-card lottie-card">
+            <h3 class="h3 article-title">Namaste</h3>
+            <div class="lottie-container" id="lottie-namaste">
+              <dotlottie-player src="https://lottie.host/fcc56881-5296-4475-895b-f12ab74549b1/fiuheNkVXV.lottie"
+                background="transparent" speed="1" style="width: 100%; height: 100%; max-width: 350px; margin: 0 auto;"
+                loop autoplay>
+              </dotlottie-player>
+            </div>
+            <p class="thankyou-text">Thank you for visiting my portfolio. I look forward to connecting with you soon.
+            </p>
+          </div>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- ================================================================
+    PRODUCT CASE STUDY FULLSCREEN OVERLAY
+    Styled with premium frosted glass, reveals detailed case studies.
+  ================================================================ -->
+  <div id="project-case-study" class="case-study-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+    <button class="case-study-close-btn" data-case-study-close aria-label="Close Case Study">
+      <ion-icon name="close-outline"></ion-icon>
+      <span class="close-text">CLOSE STUDY</span>
+    </button>
+
+    <div class="case-study-scroll-wrapper">
+      <div class="case-study-container">
+        <div id="case-study-content"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin for high-performance scroll triggers -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis Smooth Scroll for premium scrolling momentum -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js?v=9"></script>
+  <!-- Case Study Data Model -->
+  <script src="./assets/js/projects-data.js"></script>
+  <!-- Motion Enhancement Layer — after GSAP + script.js so all APIs are ready -->
+  <script src="./assets/js/motion.js"></script>
+  <!-- dotLottie Player for Namaste Animation -->
+  <script type="module" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
