@@ -1643,15 +1643,17 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .navbar {
-    position: absolute;
+    position: sticky;
     bottom: auto;
-    top: 0;
+    top: 0; /* Align with the top of the parent container and viewport */
     left: auto;
     right: 0;
     width: max-content;
     border-radius: 0 20px;
     padding: 0 20px;
     box-shadow: none;
+    z-index: 100;
+    margin-left: auto;
   }
 
   .navbar-list {
